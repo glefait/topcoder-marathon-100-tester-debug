@@ -33,7 +33,19 @@ which leads to an area:
     
     ..
     1.
-    
+        
+## Changes:
+
+Replace:
+
+        board[r1][c1] = board[r2][c2] = '.';
+
+with:
+
+        for (int i = Math.min(r1, r2); i <= Math.max(r1, r2); i++)
+        for (int j = Math.min(c1, c2); j <= Math.max(c1, c2); j++)
+            board[i][j] = '.';
+
 ## build:
 
     javac SameColorPairsVis.java
