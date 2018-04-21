@@ -1,9 +1,14 @@
 # topcoder-marathon-100-tester-debug
 
-## Build:
+## Build
 
     javac SameColorPairsVis.java
     jar cmvf META-INF/MANIFEST.MF tester.jar *.class
+
+## Edit or this repo is useless:
+
+This is not a debug but a problem misunderstanding: removing the tiles that define an area does not induce to remove all the remaining tiles in that area.
+Obvious. 
 
 ## Problem description
 
