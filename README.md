@@ -1,5 +1,10 @@
 # topcoder-marathon-100-tester-debug
 
+## Build:
+
+    javac SameColorPairsVis.java
+    jar cmvf META-INF/MANIFEST.MF tester.jar *.class
+
 ## Problem description
 
 I was stuck for a while on debugging my code until I found that tester do not produce the behaviour I was expected.
@@ -45,8 +50,3 @@ with:
         for (int i = Math.min(r1, r2); i <= Math.max(r1, r2); i++)
         for (int j = Math.min(c1, c2); j <= Math.max(c1, c2); j++)
             board[i][j] = '.';
-
-## build:
-
-    javac SameColorPairsVis.java
-    jar cmvf META-INF/MANIFEST.MF tester.jar *.class
